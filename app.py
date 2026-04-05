@@ -6,8 +6,9 @@ Filename: app.py (required for Streamlit Cloud)
 
 import streamlit as st
 
+# st.set_page_config MUST be the first Streamlit command
 st.set_page_config(
-page_title="Indian Stock Analyzer",
+page_title="Indian Stock Analyzer - 150+ Factor Framework",
 page_icon="📊",
 layout="wide",
 initial_sidebar_state="expanded",
@@ -17,8 +18,11 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
-from datetime import datetime
+import plotly.express as px
+from datetime import datetime, timedelta
+import requests
 from io import BytesIO
+import json
 import warnings
 
 warnings.filterwarnings("ignore")
