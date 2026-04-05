@@ -48,13 +48,15 @@ SCORE_INTERPRETATION = {
 (0, 39): ("SELL / AVOID", "⛔"),
 }
 
+
 # Indian stock suffix for Yahoo Finance
 def get_yahoo_ticker(stock_name: str) -> str:
-"""Convert stock name to Yahoo Finance ticker format."""
-stock_name = stock_name.strip().upper()
-if not stock_name.endswith(".NS") and not stock_name.endswith(".BO"):
-    return f"{stock_name}.NS"
-return stock_name
+    """Convert stock name to Yahoo Finance ticker format."""
+    stock_name = stock_name.strip().upper()
+    if not stock_name.endswith(".NS") and not stock_name.endswith(".BO"):
+        return f"{stock_name}.NS"
+    return stock_name
+
 
 # =============================================================================
 # DATA FETCHING FUNCTIONS
