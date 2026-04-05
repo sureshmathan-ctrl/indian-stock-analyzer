@@ -27,11 +27,8 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-try:
 import ta as ta_lib
 TA_AVAILABLE = True
-except ImportError:
-TA_AVAILABLE = False
 
 SECTOR_MAP = {
 "Banking & Financials": "banking",
