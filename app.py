@@ -1550,4 +1550,4 @@ class MicroAnalyzer:
             "Not financial advice. Consult SEBI-registered advisor."
         )
 
-main()
+    main()
