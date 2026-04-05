@@ -51,10 +51,10 @@ SCORE_INTERPRETATION = {
 }
 
 def get_yahoo_ticker(stock_name):
-stock_name = stock_name.strip().upper()
-if not stock_name.endswith(".NS") and not stock_name.endswith(".BO"):
-    return stock_name + ".NS"
-return stock_name
+    stock_name = stock_name.strip().upper()
+    if not stock_name.endswith(".NS") and not stock_name.endswith(".BO"):
+        return stock_name + ".NS"
+    return stock_name
 
 # ─────────────────────────────────────────────
 # DATA FETCHER
