@@ -61,13 +61,13 @@ def get_yahoo_ticker(stock_name):
 # ─────────────────────────────────────────────
 
 class StockDataFetcher:
-def __init__(self, ticker_symbol):
-    self.symbol = ticker_symbol
-    self.yahoo_ticker = get_yahoo_ticker(ticker_symbol)
-    self.stock = None
-    self.info = {}
-    self.history = pd.DataFrame()
-    self.data_sources = {}
+    def __init__(self, ticker_symbol):
+        self.symbol = ticker_symbol
+        self.yahoo_ticker = get_yahoo_ticker(ticker_symbol)
+        self.stock = None
+        self.info = {}
+        self.history = pd.DataFrame()
+        self.data_sources = {}
 
 def fetch_all(self):
     try:
