@@ -1155,10 +1155,10 @@ class MicroAnalyzer:
         }
         
         def get_recommendation(score):
-        for (lo, hi), (rec, em) in SCORE_INTERPRETATION.items():
-            if lo <= score < hi:
-                return rec, em
-        return "N/A", "?"
+            for (lo, hi), (rec, em) in SCORE_INTERPRETATION.items():
+                if lo <= score < hi:
+                    return rec, em
+            return "N/A", "?"
         
     # ─────────────────────────────────────────────
     # EXCEL EXPORT
