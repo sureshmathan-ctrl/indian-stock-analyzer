@@ -3,9 +3,7 @@ Comprehensive Indian Stock Analysis Tool
 Based on the 150+ Factor Framework (India Focus)
 Filename: app.py (required for Streamlit Cloud)
 """
-
 import streamlit as st
-
 # st.set_page_config MUST be the first Streamlit command
 st.set_page_config(
 page_title="Indian Stock Analyzer - 150+ Factor Framework",
@@ -13,7 +11,6 @@ page_icon="📊",
 layout="wide",
 initial_sidebar_state="expanded",
 )
-
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -24,12 +21,9 @@ import requests
 from io import BytesIO
 import json
 import warnings
-
 warnings.filterwarnings("ignore")
-
 import ta as ta_lib
 TA_AVAILABLE = True
-
 SECTOR_MAP = {
 "Banking & Financials": "banking",
 "IT & Technology": "it",
